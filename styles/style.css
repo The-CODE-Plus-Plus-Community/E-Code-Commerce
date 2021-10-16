@@ -112,5 +112,8 @@ body{
 #search .navbar-form .input-group .form-control{
     width: 100%;
 }
-
+/* slider design */
+#slider{
+    margin-bottom: 40px;
+}
 
