@@ -147,7 +147,39 @@ echo "";
         </div>
     </div>
 </div>
-
+<div id="advantages">
+    <div class="container">
+        <div class="same-height-row">
+            <div class="col-sm-4">
+                <div class="box same-height">
+                    <div class="icon">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <h3><a href="#">We Love Our Customers</a></h3>
+                    <p>We are the Code Plus Plus ECommerce Department</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="box same-height">
+                    <div class="icon">
+                        <i class="fa fa-tags"></i>
+                    </div>
+                    <h3><a href="#">Best Prices</a></h3>
+                    <p>You can Check all other sites about the prices and then compare with us</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="box same-height">
+                    <div class="icon">
+                        <i class="fa fa-thumbs-up"></i>
+                    </div>
+                    <h3><a href="#">100% Satisfaction Guarranted</a></h3>
+                    <p>Free Resources on everything for 3 months</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>
