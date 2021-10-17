@@ -1,2 +1,2 @@
-# E-Code-Commerce
-PHP / MySQL based Ecommerce website code along with Paypal payment method.
+# PHP-E-Commere 
+by pritipadma and debidatta
