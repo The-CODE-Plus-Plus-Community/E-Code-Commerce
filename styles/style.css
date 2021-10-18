@@ -148,6 +148,8 @@ body{
     font-weight: 300;
     text-transform: uppercase;
     z-index: 2;
+
+    
 }
 #advantages .box h3 a:hover{
     text-decoration:none ;
@@ -157,4 +159,11 @@ body{
     color: #555555;
     z-index: 2;
 }
-
+/*products style */
+#bot h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #4993e4;
+    font-weight: 100;
+    text-align: center;
+}

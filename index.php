@@ -179,6 +179,25 @@ echo "";
         </div>
     </div>
 </div>
+<div id="bot">
+    <div class="box">
+        <div class="container">
+            <div class="col-md-12">
+                <h2>Latest this week</h2>
+            </div>
+        </div>
+    </div>
+</div>          
+<div id="content" class="container">
+        <div class="row">
+            <div class="col-sm-4 col-sm-6 single">
+                <div class="product">
+                    <a href="details.php">
+                        <img src="admin_area/product_images">
+                </div>
+            </div>
+        </div>
+</div>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>
