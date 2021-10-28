@@ -1,8 +1,3 @@
-/* 
-
-Template
-
-*/
 body{
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -230,6 +225,31 @@ padding:10px 10px 0px;
 #content .product .text .buttons .btn {
 margin-bottom:10px;
 }
+/* Breadcrumb Styles */
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom:20px;
+    background-color: #ffffff;
+    border-radius: 0;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    }
+    
+    .breadcrumb > li + li:before {
+    content: ">\00a0";
+    color:#cccccc;
+    
+    }
+    
+    @media (max-width: 991px) {
+    
+    .breadcrumb {
+    padding: 8px 0;
+    text-align:center;
+    }
+    
+    }
+    
+
 
 /* Footer Styles */
 

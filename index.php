@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,9 +11,6 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
 <body>
-<?php  
-echo "";
-?>
 <div id="top"><!-- top starts-->
     <div class="container">
         <div class="col-md-6 offer">
