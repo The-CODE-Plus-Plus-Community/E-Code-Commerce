@@ -18,7 +18,7 @@ echo "";
     <div class="container">
         <div class="col-md-6 offer">
             <a href="#" class="btn btn-success btn-sm">
-                Welcome Guest
+                welcome Guest
             </a>
         </div>
         <div class="col-md-6">

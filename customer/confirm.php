@@ -119,36 +119,68 @@
             <?php include("includes/sidebar.php"); ?>
         </div><!-- col-md-3 Ends -->
         <div class="col-md-9">
-            <div class="box">
-            <?php
-            if(isset($_GET['my_orders'])){
-                include("my_orders.php");
-            }
-            if(isset ($_GET['pay_offline'])){
-                include("pay_offline.php");
+<div class="box">
+    <h1 align="centre">please confirm your payment</h1>
+    <form action="confirm.php" method="post" enctype="multipart/form-data">
 
-            }
-            if(isset ($_GET['edit_account'])){
-                include("edit_account.php");
-
-            }
-
-            if(isset ($_GET['change_pass'])){
-                include("change_pass.php");
-}
-if(isset ($_GET['delete_account'])){
-    include("delete_account.php");
-
-}
-
-
-
-
-
-            ?> 
-            </div>
-        </div>
+<div class="form-group">
+    <label>Invoice No</label>
+    <input type="text" class="form-control" name="invoice_no" required>
 </div>
+
+
+<div class="form-group">
+    <label>Amount sent:</label>
+    <input type="text" class="form-control" name="amount_sent" required>
+</div>
+
+
+<div class="form-group">
+    <label>select payment Mode</label>
+    <select name="payment_mode" class="form-control">
+        <option>Select payment Mode</option>
+        <option>Bank code</option>
+        <option>UBL/omni paisa</option>
+        <option>Easy paisa</option>
+        <option>western union</option>
+    </select>
+</div>
+
+
+<div class="form-group">
+    <label>Transaction/Reference Id:</label>
+    <input type="text" class="form-control" name="ref_no" required>
+</div>
+
+
+<div class="form-group">
+    <label>Easy paisa/omni code:</label>
+    <input type="text" class="form-control" name="code" required>
+</div>
+
+
+<div class="form-group">
+    <label>Payment Date</label>
+    <input type="text" class="form-control" name="date" required>
+</div>
+<div class="text-centre">
+    <button type="submit" name="confirm_payment" class="btn btn-primary btn-lg">
+<i class="fa fa-user-md"> </i> confirm payment
+
+
+
+    </button>
+</div>
+
+    </form>
+</div>
+
+
+        </div>
+     
+
+
+        </div>
 </div>
 
 
