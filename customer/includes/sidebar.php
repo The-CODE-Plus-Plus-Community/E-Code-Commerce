@@ -13,7 +13,7 @@
             </a>
             </li>
             <li class="<?php if(isset($_GET['pay_offline'])) {echo "active";}?>">
-                <a href="my_account.php?pay_offline"> <i class="fa fa-bolt"> </i> pay offline
+                <a href="my_account.php?pay_offline"> <i class="fa fa-bolt"> </i> Pay Offline
             </a>
             </li>
             <li class="<?php if(isset($_GET['edit_account'])) {echo "active";}?>">
@@ -21,7 +21,7 @@
             </a>
             </li>
             <li class="<?php if(isset($_GET['change_pass'])) {echo "active";}?>">
-                <a href="my_account.php?change_pass"> <i class="fa fa-user"> </i> change password
+                <a href="my_account.php?change_pass"> <i class="fa fa-user"> </i> Change Password
             </a>
             </li>
             <li class="<?php if(isset($_GET['delete_account'])) {echo "active";}?>">
