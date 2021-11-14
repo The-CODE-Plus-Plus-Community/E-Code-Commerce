@@ -7,7 +7,7 @@
     <title>E-Code-Commerce</title>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/cart.css">
+    <link rel="stylesheet" href="styles/shop.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
 <body>
@@ -21,22 +21,22 @@
         <div class="col-md-6">
             <ul class="menu">
                 <li>
-                    <a href="customer_register.php">
+                    <a href=" ../customer_register.php">
                         Register
                     </a>
                 </li>
                 <li>
-                    <a href="checkout.php">
+                    <a href="my_account.php">
                         My Account
                     </a>
                 </li>
                 <li>
-                    <a href="cart.php">
+                    <a href="../cart.php">
                         Go to Cart
                     </a>
                 </li>
                 <li>
-                    <a href="checkout.php">
+                    <a href="../checkout.php">
                         Login
                     </a>
                 </li>
@@ -64,19 +64,19 @@
             <div class="padding-nav">
                 <ul class="nav navbar-nav navbar-left">
                     <li>
-                        <a href="index.php">Home</a>
+                        <a href="../index.php">Home</a>
                     </li>
                     <li>
-                        <a href="shop.php">Shop</a>
+                        <a href="../shop.php">Shop</a>
+                    </li>
+                    <li  class="active">
+                        <a href="my_account.php">My Account</a>
                     </li>
                     <li>
-                        <a href="checkout.php">My Account</a>
+                        <a href="../cart.php">Shopping Cart</a>
                     </li>
                     <li>
-                        <a href="cart.php">Shopping Cart</a>
-                    </li>
-                    <li class="active">
-                        <a href="contact.php">Contact Us</a>
+                        <a href="../contact.php">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -112,49 +112,76 @@
                 <li>
                     <a href="index.php">Home</a>
                 </li>
-                <li>Contact Us</li>
+                <li>My Account</li>
             </ul><!-- breadcrumb Ends -->
         </div><!-- col-md-12 Ends -->
         <div class="col-md-3"><!-- col-md-3 Starts -->
             <?php include("includes/sidebar.php"); ?>
         </div><!-- col-md-3 Ends -->
-        <div class="col-md-9"><!-- col-md-9 Starts -->
-            <div class="box"><!-- box Starts -->
-                <div class="box-header"><!-- box-header Starts -->
-                    <center><!-- center Starts -->
-                        <h2> Feel Free to Contact Us</h2>
-                        <p class="text-muted">
-                            If you have any questions, feel free to contact us. Our Customer Service work <strong>24/7</strong>
-                        </p>
-                    </center><!-- center Ends -->
-                </div><!-- box-header Ends -->
-                <form action="contact.php" method="post"><!-- form Starts -->
-                    <div class="form-group"><!-- form-group Starts -->
-                        <label>Name</label>
-                        <input type="text" class="form-control" name="name" required>
-                    </div><!-- form-group Ends -->
-                    <div class="form-group"><!-- form-group Starts -->
-                        <label>Email</label>
-                        <input type="text" class="form-control" name="email" required>
-                    </div><!-- form-group Ends -->
-                    <div class="form-group"><!-- form-group Starts -->
-                        <label> Subject </label>
-                        <input type="text" class="form-control" name="subject" required>
-                    </div><!-- form-group Ends -->
-                    <div class="form-group"><!-- form-group Starts -->
-                        <label> Message </label>
-                        <textarea class="form-control" name="message" rows="3" required></textarea>
-                    </div><!-- form-group Ends -->
-                    <div class="text-center"><!-- text-center Starts -->
-                        <button type="submit" name="submit" class="btn btn-primary">
-                            <i class="fa fa-user-md"></i> Send Message
-                        </button>
-                    </div>
-                </div>
-        </div><!-- container Ends -->
-    </div><!-- container Ends -->
-</div><!-- content Ends -->
+        <div class="col-md-9">
+<div class="box">
+    <h1 align="centre">please confirm your payment</h1>
+    <form action="confirm.php" method="post" enctype="multipart/form-data">
 
+<div class="form-group">
+    <label>Invoice No</label>
+    <input type="text" class="form-control" name="invoice_no" required>
+</div>
+
+
+<div class="form-group">
+    <label>Amount sent:</label>
+    <input type="text" class="form-control" name="amount_sent" required>
+</div>
+
+
+<div class="form-group">
+    <label>select payment Mode</label>
+    <select name="payment_mode" class="form-control">
+        <option>Select payment Mode</option>
+        <option>Bank code</option>
+        <option>UBL/omni paisa</option>
+        <option>Easy paisa</option>
+        <option>western union</option>
+    </select>
+</div>
+
+
+<div class="form-group">
+    <label>Transaction/Reference Id:</label>
+    <input type="text" class="form-control" name="ref_no" required>
+</div>
+
+
+<div class="form-group">
+    <label>Easy paisa/omni code:</label>
+    <input type="text" class="form-control" name="code" required>
+</div>
+
+
+<div class="form-group">
+    <label>Payment Date</label>
+    <input type="text" class="form-control" name="date" required>
+</div>
+<div class="text-centre">
+    <button type="submit" name="confirm_payment" class="btn btn-primary btn-lg">
+<i class="fa fa-user-md"> </i> confirm payment
+
+
+
+    </button>
+</div>
+
+    </form>
+</div>
+
+
+        </div>
+     
+
+
+        </div>
+</div>
 
 
 
